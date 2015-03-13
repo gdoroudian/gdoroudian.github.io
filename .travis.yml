@@ -1,0 +1,10 @@
+language: ruby
+sudo: false
+rvm: 2.2.0
+script: bundle exec rake deploy
+branches:
+  only: jekyll
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - secure: LCWvbwZu61mtJoTPf+stAKji5jFlPrM8SAW+Z7dFayYGrIjP4ETvGRZgntGwqgZe56v+HFZcbiCv+b5m4x7JbaFsm6OWFCwgEN/OerRCQBZX/TsjZAGfD6re6PTxEOkrszWcLTAWrwQFnUAS6GxUvvYE/gV9iClTzh9kmtcDlgo=
